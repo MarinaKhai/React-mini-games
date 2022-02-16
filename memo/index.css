@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Century Gothic', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 3vh;
+  height: 100vh;
+  color: coral;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button {
+  border-radius: 0;
+  border: 1px solid rgb(125, 238, 240);
+  padding: 4px 14px;
+  background-color: azure;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+button:active{
+  box-shadow: 0.2px 0.2px 0.5px 0.5px coral inset;
+  border: 0.5px solid coral;
+}
+h2, h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+p {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.game-board>div {
+  height: 142px;
+  width: 142px;
+  border: 1px solid coral;
+  margin-top: -1px;
+  margin-left: -1px;
+  line-height: 142px;
+  cursor: pointer;
+}
+.game-board>div:first-child {
+  border-top-left-radius: 10%;
+}
+.game-board>div:nth-child(4) {
+  border-top-right-radius: 10%;
+}
+.game-board>div:nth-child(13) {
+  border-bottom-left-radius: 10%;
+}
+.game-board>div:last-child {
+  border-bottom-right-radius: 10%;
+}
